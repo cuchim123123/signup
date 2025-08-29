@@ -4,9 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="fonts/norse-bold-font.css">
+    <title>Signup</title>
 </head>
 <body>
-    
+    <div class="left-background">
+        <img src="images/background.jpg" alt="background">
+        <div class="logo-overlay">
+            <img src="images/odin-lined.png" alt="odin-logo">
+            <span class="logo-name">ODIN</span>
+        </div>
+    </div>
+    <div class="right-content">
+        <div class="abstract">
+            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
+            <p>Signup <em>now</em> to get started.</p>
+            <p>You <em>know</em> you want to.</p>
+        </div>
+        <div id="form">
+            <form id="signup-form">
+                <h2>Let's do this!</h2>
+                <label for="fname">FIRST NAME</label>
+                <input type="text" name="fname" id="fname" placeholder="Bao" required>
+
+                <label for="lname">LAST NAME</label>
+                <input type="text" name="lname" id="lname" placeholder="Ngo" required>
+
+                <label for="email">EMAIL</label>
+                <input type="email" name="email" id="email" placeholder="baongo@gmail.com" required>
+
+                <label for="phone">PHONE NUMBER</label>
+                <input type="tel" name="phone" id="phone">
+
+                <label for="password">PASSWORD</label>
+                <input type="password" name="password" id="password" required>
+
+                <label for="repeat-password">CONFIRM PASSWORD</label>
+                <input type="password" id="repeat-password" required>
+            </form>
+        </div>
+        <div class="submit">
+            <button type="submit" form="signup-form">Create Account</button>
+            <p>Already have an account?</p>
+            <a href="">Login</a>
+        </div>
+    </div>
 </body>
 </html>
