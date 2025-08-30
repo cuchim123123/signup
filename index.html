@@ -21,32 +21,46 @@
             <p>Signup <em>now</em> to get started.</p>
             <p>You <em>know</em> you want to.</p>
         </div>
-        <div id="form">
+        <div class="form">
             <form id="signup-form">
                 <h2>Let's do this!</h2>
-                <label for="fname">FIRST NAME</label>
-                <input type="text" name="fname" id="fname" placeholder="Bao" required>
+                <div>
+                    <label for="fname">FIRST NAME</label>
+                    <input type="text" name="fname" id="fname" placeholder="Bao" required>
+                </div>
 
-                <label for="lname">LAST NAME</label>
-                <input type="text" name="lname" id="lname" placeholder="Ngo" required>
+                <div>
+                    <label for="lname">LAST NAME</label>
+                    <input type="text" name="lname" id="lname" placeholder="Ngo" required>
+                </div>
 
-                <label for="email">EMAIL</label>
-                <input type="email" name="email" id="email" placeholder="baongo@gmail.com" required>
+                <div>
+                    <label for="email">EMAIL</label>
+                    <input type="email" name="email" id="email" placeholder="baongo@gmail.com" required>
+                </div>
 
-                <label for="phone">PHONE NUMBER</label>
-                <input type="tel" name="phone" id="phone">
+                <div>
+                    <label for="phone">PHONE NUMBER</label>
+                    <input type="tel" name="phone" id="phone">
+                </div>
 
-                <label for="password">PASSWORD</label>
-                <input type="password" name="password" id="password" required>
+                <div>
+                    <label for="password">PASSWORD</label>
+                    <input type="password" name="password" id="password" required>
+                </div>
 
-                <label for="repeat-password">CONFIRM PASSWORD</label>
-                <input type="password" id="repeat-password" required>
+                <div>
+                    <label for="repeat-password">CONFIRM PASSWORD</label>
+                    <input type="password" id="repeat-password" required>
+                </div>
             </form>
         </div>
         <div class="submit">
             <button type="submit" form="signup-form">Create Account</button>
-            <p>Already have an account?</p>
-            <a href="">Login</a>
+            <div>
+                <span>Already have an account?</span>
+                <a href="">Login</a>
+            </div>
         </div>
     </div>
 </body>

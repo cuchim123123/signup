@@ -2,6 +2,7 @@ body {
     display: flex;
     margin: 0;
     height: 100vh;
+    box-sizing: border-box;
 
 }
 
@@ -14,17 +15,16 @@ img {
 .left-background {
     position: relative;
     background-color: red;
-}
-.left-background .logo-overlay {
-    /*no shrink*/
+    min-width: 200px;
+    min-height: 300px;
+    flex: 1;
 }
 
 .left-background > img {
     object-fit: cover;
     height: 100%;
     width: 100%;
-    min-width: 20vw; 
-    min-height: 20vw;
+
 }
 
 
@@ -44,7 +44,7 @@ img {
 
     color: white;
     font-family: 'Norse';
-  font-size: clamp(2rem, 10vh, 10rem); /* big, scales with viewport */
+    font-size: clamp(2rem, 10vh, 10rem); /* big, scales with viewport */
 
 }
 
@@ -55,4 +55,99 @@ img {
 .right-content {
     display: flex;
     flex-direction: column;
+    flex: 3;
+}
+
+.right-content div[class] {
+    display: flex;
+    flex-direction: column;
+    padding: 2vh 2vw;
+    min-height: 200px;
+    min-width: 500px;
+}
+
+.abstract {
+    flex: 1;
+    background-color: rgb(236, 234, 234);
+    justify-content: flex-end;
+}   
+
+
+.abstract p {
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-family:'Times New Roman', Times, serif;
+    margin: 0;
+}
+
+.abstract p:last-of-type {
+    margin: 1.5rem 0;
+}
+
+#signup-form {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+#signup-form h2 {
+    width: 100%;
+}
+
+#signup-form div {
+    flex: 1 1 40%;
+
+    display: flex;
+    flex-direction: column;
+
+    margin: 5px;
+}
+
+#signup-form {
+    font-size: 0.7rem;
+}
+
+input {
+    width: 50%;
+    border: 1px solid #E5E7EB;
+    border-radius: 3px;
+}
+
+.submit {
+    align-items: flex-start;
+    flex: 1;
+    background-color: rgb(236, 234, 234);    
+}
+
+
+
+.abstract, .form, .submit {
+    flex: 1 1 0;   /* flex-grow:1, flex-shrink:1, flex-basis:0 */
+    min-height: 0; /* allow shrinking below content height */
+    box-sizing: border-box; /* include padding in height calculations */
+}
+
+.form input:focus {
+    border: 2px solid blue;
+}
+
+.form input:invalid {
+    border: 2px solid red;
+}
+
+button {
+    padding: 0.7rem 2.5rem;
+    color: white;
+    background-color: #596D48;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: #596D48 ;
+    font-weight: bold;
 }
